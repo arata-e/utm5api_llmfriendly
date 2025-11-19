@@ -6,6 +6,7 @@ This document describes the endpoints for the 'Integrations_24tv' API section fo
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/integrations/24tv/users`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `offset`
     - **Type:** `Number`
@@ -14,9 +15,7 @@ This document describes the endpoints for the 'Integrations_24tv' API section fo
     - **Type:** `Number`
     - **Description:** Limit
 ### Example Response:
-
-HTTP/1.1 200 OK
-
+```
 {
  "total" : 1,
  "items" :
@@ -47,8 +46,6 @@ HTTP/1.1 200 OK
      },
      "provider_uid": "string"
    }
- ]
 ```
-
 ---
 

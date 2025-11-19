@@ -6,157 +6,146 @@ This document describes the endpoints for the 'Inventory' API section for UTM5 i
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/inventory/dhcp_options`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: Inventory - Create dhcp pool
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/inventory/dhcp_pool`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "pool_id" : 1}
 ```
-
 ---
 
 ## Endpoint: Inventory - Create switch
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/inventory/switches`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "switch_id" : 1}
 ```
-
 ---
 
 ## Endpoint: Inventory - Create type of switch
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/inventory/switch_types`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "profile_id" : 1}
 ```
-
 ---
 
 ## Endpoint: Inventory - Delete all dhcp options
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/inventory/dhcp_options`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `owner_id`
     - **Type:** `Number`
     - **Description:** Owner id of dhcp option owner type - Type of owner
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: Inventory - Delete dhcp lease
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/inventory/dhcp_lease`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `lease_id`
     - **Type:** `Number`
     - **Description:** Lease id
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: Inventory - Delete dhcp pool
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/inventory/dhcp_pool`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `pool_id`
     - **Type:** `Number`
     - **Description:** pool id
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: Inventory - Delete switch
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/inventory/switches`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `switch_id`
     - **Type:** `Number`
     - **Description:** switch id
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: Inventory - Delete type of switch
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/inventory/switch_types`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `profile_id`
     - **Type:** `Number`
     - **Description:** Profile id of device
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: Inventory - Expire dhcp lease
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/inventory/expire_dhcp_lease`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: Inventory - Get dhcp leases active
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/inventory/dhcp_leases_active`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
-  {
+```
+{
     "binding_id": 4,
     "client_id": "3",
     "expired": 1574175039,
@@ -167,21 +156,18 @@ HTTP/1.1 200 OK
     "server_id": "1",
     "updated": 1574173039
   }
-]
 ```
-
 ---
 
 ## Endpoint: Inventory - Get dhcp leases expired
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/inventory/dhcp_leases_expired`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
-  {
+```
+{
     "binding_id": 4,
     "client_id": "3",
     "expired": 1574175039,
@@ -192,21 +178,18 @@ HTTP/1.1 200 OK
     "server_id": "1",
     "updated": 1574173039
   }
-]
 ```
-
 ---
 
 ## Endpoint: Inventory - Get dhcp leases
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/inventory/dhcp_leases`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
-  {
+```
+{
     "binding_id": 4,
     "client_id": "3",
     "expired": 1574175039,
@@ -217,15 +200,14 @@ HTTP/1.1 200 OK
     "server_id": "1",
     "updated": 1574173039
   }
-]
 ```
-
 ---
 
 ## Endpoint: Inventory - Get dhcp options list
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/inventory/dhcp_options`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `owner_id`
     - **Type:** `Number`
@@ -234,10 +216,8 @@ HTTP/1.1 200 OK
     - **Type:** `Number`
     - **Description:** type of owner
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
-  {
+```
+{
     "data": "",
     "data_type": 5,
     "id": 10,
@@ -253,21 +233,18 @@ HTTP/1.1 200 OK
     "owner_id": 1,
     "owner_type": 1
   }
-]
 ```
-
 ---
 
 ## Endpoint: Inventory - Get dhcp pools
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/inventory/dhcp_pools`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
- [
-      {
+```
+{
         "block_action_type": 1,
         "block_pool_id": 0,
         "dns1_server": "8.8.8.8",
@@ -285,57 +262,39 @@ HTTP/1.1 200 OK
           }
         ]
       }
-    ]
 ```
-
 ---
 
 ## Endpoint: Inventory - Get switch pool links
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/inventory/dhcp_pool_links`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `switch_id`
     - **Type:** `Number`
     - **Description:** Switch id
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
-"id" : 1,
-"block_pool_id" : 1,
-"lease_time" : 12321,
-"block_action_type" : 1,
-"gateway" : "192.168.0.1",
-"netmask" : 24,
-"dns1_server" : "8.8.8.8",
-"dns2_server" : "9.9.9.10",
-"ntp_server" : "1.1.1.1",
-"domain_name" : "superDomain",
-"ranges" : [
-             {
+```
+{
                  "first_addr": "1.2.3.0",
                  "last_addr" : "1.2.3.254"
              }
-           ]
-]
 ```
-
 ---
 
 ## Endpoint: Inventory - Get switch ports usage
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/inventory/switch_ports_usage`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `switch_id`
     - **Type:** `Number`
     - **Description:** Switch id
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
- {
+```
+{
  "port" : 1,
  "user_data" : [
      {
@@ -344,15 +303,14 @@ HTTP/1.1 200 OK
      }
    ]
  }
-]
 ```
-
 ---
 
 ## Endpoint: Inventory - Get switches by page
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/inventory/switches_paged`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `page`
     - **Type:** `Number`
@@ -364,9 +322,7 @@ HTTP/1.1 200 OK
     - **Type:** `Number`
     - **Description:** search query
 ### Example Response:
-
-HTTP/1.1 200 OK
-
+```
 {
  "switches" :
   [
@@ -390,19 +346,17 @@ HTTP/1.1 200 OK
    "total_rows": 123
   }
 ```
-
 ---
 
 ## Endpoint: Inventory - Get switches
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/inventory/switches`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
- [
-      {
+```
+{
         "address": "0.0.0.0",
         "dhcp_pools": [
           1
@@ -418,19 +372,17 @@ HTTP/1.1 200 OK
         "type": 4,
         "ports_num_offset": 1
       }
-    ]
 ```
-
 ---
 
 ## Endpoint: Inventory - Get types of switch
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/inventory/switch_types`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "id": 1,
   "name": "Unmanaged Switch",
@@ -456,58 +408,53 @@ HTTP/1.1 200 OK
   }
 }
 ```
-
 ---
 
 ## Endpoint: Inventory - Update dhcp pool
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/inventory/dhcp_pool`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: Inventory - Update switch dhcp pool links
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/inventory/dhcp_pool_links`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: Inventory - Update switch
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/inventory/switches`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: Inventory - Update type of switch
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/inventory/switch_types`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 

@@ -6,6 +6,7 @@ This document describes the endpoints for the 'User' API section for UTM5 isp bi
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users`
+- **Ready:** `true`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
@@ -14,8 +15,7 @@ This document describes the endpoints for the 'User' API section for UTM5 isp bi
     - **Type:** `Number`
     - **Description:** Users unique login.
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "user_id" : "1",
   "login" : "test",
@@ -32,288 +32,267 @@ HTTP/1.1 200 OK
   "till" : "0"
  }
 ```
-
 ---
 
 ## Endpoint: User - Add account to group
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/link_account_group`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Add account to group
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/link_groups_to_account`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Add card pool owner
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/card_pool_owner`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Add group to user
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/add_group_to_user`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Cancel payment
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/cancel_payment`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Change account balance
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/change_account_balance`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Create acc group
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/accounts_groups`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Create account
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/accounts`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "account_id" : "1" }
 ```
-
 ---
 
 ## Endpoint: User - Create account with ID ( BE CAREFUL, UNSAFE API )
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/accounts_with_id`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "account_id" : "1" }
 ```
-
 ---
 
 ## Endpoint: User - Create card pool
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/card_pool`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "pool_id" : 3}
 ```
-
 ---
 
 ## Endpoint: User - Create dealer
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/dealer`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "dealer_id" : -10}
 ```
-
 ---
 
 ## Endpoint: User - Create netup IPTV access card
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/access_card`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Create netup IPTV activation code
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/activation_codes`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Create service link freezed
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/servicelinks/freezed`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "service_link_id" : 1 }
 ```
-
 ---
 
 ## Endpoint: User - Create system group
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/system_groups`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "group_id" : 3}
 ```
-
 ---
 
 ## Endpoint: User - Create system user
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/system_users`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "sys_user_id" : -10}
 ```
-
 ---
 
 ## Endpoint: User - Create user contracts
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/contracts`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "contract_id" : "1" }
 ```
-
 ---
 
 ## Endpoint: User - Create user group
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/groups`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Create user tech param
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/tech_params`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Create user
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "user_id" : 1,
   "account_id" : 1 }
 ```
-
 ---
 
 ## Endpoint: User - Create user with ID ( BE CAREFUL, UNSAFE API )
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/users_with_id`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "user_id" : "1",
   "account_id" : "1" }
 ```
-
 ---
 
 ## Endpoint: User - Delete access card
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/users/access_card`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `card_id`
     - **Type:** `Number`
@@ -322,62 +301,58 @@ HTTP/1.1 200 OK
     - **Type:** `Number`
     - **Description:** iptv card number
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Delete account
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/users/accounts`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
     - **Description:** Account id.
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Delete accounts groups
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/users/accounts_groups`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `group_id`
     - **Type:** `Number`
     - **Description:** Group id.
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Delete accs from group
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/unlink_accounts_group`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Delete card owner from pool
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/users/card_pool_owner`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `pool_id`
     - **Type:** `Number`
@@ -386,81 +361,76 @@ HTTP/1.1 200 OK
     - **Type:** `Number`
     - **Description:** owner identifier
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Delete contracts
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/users/contracts`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `contract_id`
     - **Type:** `Number`
     - **Description:** Contract id.
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Delete recurrent payments
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/users/recurrent_payments`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
     - **Description:** User identifier
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Delete service links
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/users/servicelinks`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `slink_id`
     - **Type:** `Number`
     - **Description:** Service link unique ID
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Delete system user
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/users/system_users`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `sys_user_id`
     - **Type:** `Number`
     - **Description:** System User identifier.
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Delete tariff link
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/users/tarifflinks`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
@@ -472,17 +442,16 @@ HTTP/1.1 200 OK
     - **Type:** `Number`
     - **Description:** Tariff link id.
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Delete tech param
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/users/tech_params`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `tech_param_id`
     - **Type:** `Number`
@@ -491,33 +460,31 @@ HTTP/1.1 200 OK
     - **Type:** `Number`
     - **Description:** Service link id.
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Delete user block
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/users/blocks`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `block_id`
     - **Type:** `Number`
     - **Description:** block identifier
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Delete user from group
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/users/user_from_group`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
@@ -526,17 +493,16 @@ HTTP/1.1 200 OK
     - **Type:** `Number`
     - **Description:** group identifier
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Delete user from group
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/users/remove_user_from_group`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
@@ -545,55 +511,50 @@ HTTP/1.1 200 OK
     - **Type:** `Number`
     - **Description:** group id
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Delete user groups
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/users/groups`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `group_id`
     - **Type:** `Number`
     - **Description:** Group id.
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Delete user
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/users`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
     - **Description:** User id.
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Deleted users search
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/deleted_search`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
- {
+```
+{
   "user_id" : "1",
   "login" : "test",
   "password" : "0177c054",
@@ -603,15 +564,14 @@ HTTP/1.1 200 OK
   "card_user": 0,
   "accounts":[]
  }
-]
 ```
-
 ---
 
 ## Endpoint: User - Download contract
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/contracts/download`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `contract_id`
     - **Type:** `Number`
@@ -620,32 +580,29 @@ HTTP/1.1 200 OK
     - **Type:** `Number`
     - **Description:** Is conversion
 ### Example Response: Not available
-
 ---
 
 ## Endpoint: User - Execute freezed link
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/servicelinks/execute_freezed`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result": "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Extended search users
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/extended_search`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
- {
+```
+{
   "user_id" : "1",
   "login" : "test",
   "password" : "0177c054",
@@ -660,55 +617,48 @@ HTTP/1.1 200 OK
   "accounts" : [1],
   "till" : "0"
  }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get account group
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/accounts_group`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-
- {
+```
+{
      "group_id": "1",
      "group_name": "Users",
      "accounts": [1,2]
  }
 ```
-
 ---
 
 ## Endpoint: User - Get accounts all groups
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/accounts_all_groups`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
- {
+```
+{
      "group_id": "1",
      "group_name": "Users"
  }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get accounts group info
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/accounts_group_info`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "group_name": "Guests",
   "grups_users": [
@@ -718,52 +668,46 @@ HTTP/1.1 200 OK
      ]
 }
 ```
-
 ---
 
 ## Endpoint: User - Get accounts groups by aid
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/accounts_groups_by_aid`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
     - **Description:** Acc unique ID.
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
- {
+```
+{
      "group_id": "1",
      "group_name": "Users"
  }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get accounts groups
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/accounts_groups`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
- {
+```
+{
      "group_id": "1",
      "group_name": "Users"
  }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get accounts
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/accounts`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
@@ -775,9 +719,8 @@ HTTP/1.1 200 OK
     - **Type:** `String`
     - **Description:** User external ID(Not required).
 ### Example Response:
-
-HTTP/1.1 200 OK
-[{
+```
+{
 	"access_card_number": 0,
 	"access_card_timeout": 0,
 	"account_id": 40,
@@ -814,38 +757,34 @@ HTTP/1.1 200 OK
 	"unlimited": false,
 	"user_id": 31,
 	"vat_rate": 0.0
-}]
+}
 ```
-
 ---
 
 ## Endpoint: User - Get accounts
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/list_accounts`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
+```
 {
   "user_id" : "1",
   "login" : "test",
   "account_id" :1
  }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get admin info
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/who_am_i`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "ip4": "0.0.0.0",
   "ip6": "::",
@@ -861,42 +800,36 @@ HTTP/1.1 200 OK
   "user_id": -1
 }
 ```
-
 ---
 
 ## Endpoint: User - Get all user bonuses
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/all_bonuses`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
-    {
+```
+{
       "id" : 1,
       "user_id" : 1,
       "amount" : 100.0,
       "burn_time" : 1625753527,
       "charged" : 50.0,
       "type" : 0
-     },
-...
-]
+     }
 ```
-
 ---
 
 ## Endpoint: User - Get all users data
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/all_users`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
-	{
+```
+{
 		"accounts": [
 			39
 		],
@@ -916,39 +849,33 @@ HTTP/1.1 200 OK
 		"till": 0,
 		"user_id": 30
 	}
-]
 ```
-
 ---
 
 ## Endpoint: User - Get allowed fids
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/fids`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
- [
-  {
+```
+{
       "fid_id": 1,
       "fid_name": "name",
       "fid_module" : "mod"
   }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get blocks info
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/blocks_info`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
+```
 {
 	"access_card_number": 0,
 	"access_card_timeout": 0,
@@ -997,22 +924,20 @@ HTTP/1.1 200 OK
 	"user_id": 1,
 	"vat_rate": 0.0
 }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get card pool info
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/card_pool`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `pool_id`
     - **Type:** `Number`
     - **Description:** Card pool identifier
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "info": [
     {
@@ -1046,19 +971,17 @@ HTTP/1.1 200 OK
   ]
 }
 ```
-
 ---
 
 ## Endpoint: User - Get card pools list
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/card_pools`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
-  {
+```
+{
     "cards": 0,
     "cards_used": 0,
     "first_update": 0,
@@ -1072,47 +995,41 @@ HTTP/1.1 200 OK
     "last_update": 1576152887,
     "pool_id": 2
   }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get contracts
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/contracts`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
     - **Description:** Users unique login.
 ### Example Response:
-
-HTTP/1.1 200 OK
- [
-  {
+```
+{
                 "contract_id" : "1",
                 "template_id" : "1",
                 "created" : "",
                 "name" : "",
                 "path" : ""
          }
- ]
 ```
-
 ---
 
 ## Endpoint: User - Get dealer info
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/dealer`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `dealer_id`
     - **Type:** `Number`
     - **Description:** Dealer unique identifier (negative value)
 ### Example Response:
-
-HTTP/1.1 200 OK
-
+```
 {
   "dealer": {
     "act_address": "zhopinsk",
@@ -1152,13 +1069,13 @@ HTTP/1.1 200 OK
   }
 }
 ```
-
 ---
 
 ## Endpoint: User - Get dealer privileges
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/dealer_privileges`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `dealer_id`
     - **Type:** `Number`
@@ -1167,25 +1084,20 @@ HTTP/1.1 200 OK
     - **Type:** `Number`
     - **Description:** Privilege param (one of enum {acl_user,acl_house,acl_service,acl_tariff,acl_discount_period})
 ### Example Response:
-
-HTTP/1.1 200 OK
-
-[0,1]
 ```
 
+```
 ---
 
 ## Endpoint: User - Get dealers list
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/dealers`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-
-[
-  {
+```
+{
     "ip4": "1.2.3.4",
     "ip6": "::0.1.0.0",
     "is_dealer": true,
@@ -1213,15 +1125,14 @@ HTTP/1.1 200 OK
     "token": "",
     "user_id": -12
   }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get documents
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/documents`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
@@ -1236,17 +1147,16 @@ HTTP/1.1 200 OK
     - **Type:** `Number`
     - **Description:** 
 ### Example Response: Not available
-
 ---
 
 ## Endpoint: User - Get group info
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/group_info`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "group_name": "Guests",
   "grups_users": [
@@ -1255,19 +1165,17 @@ HTTP/1.1 200 OK
      ]
 }
 ```
-
 ---
 
 ## Endpoint: User - Get groups for user
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/recurrent_payments`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
-    {
+```
+{
       "id" :  1,
       "customer_id" :  1,
       "account_id" :  1,
@@ -1281,15 +1189,14 @@ HTTP/1.1 200 OK
       "service_key" : "",
       "service_client_id" : ""
     }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get invoices
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/invoices`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
@@ -1298,10 +1205,8 @@ HTTP/1.1 200 OK
     - **Type:** `Number`
     - **Description:** Users unique login.
 ### Example Response:
-
-HTTP/1.1 200 OK
- [
- {
+```
+{
      "account_id" : "",
      "date" : "",
      "invoice_id" : "",
@@ -1310,15 +1215,14 @@ HTTP/1.1 200 OK
      "binded_currency_sum" : "",
      "total" : ""
  }
- ]
 ```
-
 ---
 
 ## Endpoint: User - Get ip groups by user_id OR account_id
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/ip_groups_specific`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
@@ -1327,10 +1231,8 @@ HTTP/1.1 200 OK
     - **Type:** `Number`
     - **Description:** Account identifier
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
-  {
+```
+{
     "account_id": 2,
     "allowed_cid": "",
     "dhcp_options": [],
@@ -1376,21 +1278,18 @@ HTTP/1.1 200 OK
     "user_id": 2,
     "vlan_id": 0
   }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get ip groups
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/ip_groups`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
-  {
+```
+{
     "account_id": 0,
     "ipgroup_id": 1,
     "items": [
@@ -1435,51 +1334,48 @@ HTTP/1.1 200 OK
     ],
     "slink_id": 1
   }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get irdeto activate result
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/irdeto/activate`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `card_number`
     - **Type:** `string`
     - **Description:** Irdeto card number
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "result": "ok";
 }
 ```
-
 ---
 
 ## Endpoint: User - Get irdeto deactivate result
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/irdeto/deactivate`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `card_number`
     - **Type:** `string`
     - **Description:** Irdeto card number
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "result": "ok";
 }
 ```
-
 ---
 
 ## Endpoint: User - Get irdeto pair chipset result
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/irdeto/pair_chipset`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `card_number`
     - **Type:** `string`
@@ -1488,37 +1384,35 @@ HTTP/1.1 200 OK
     - **Type:** `string`
     - **Description:** Irdeto card number
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "result": "ok";
 }
 ```
-
 ---
 
 ## Endpoint: User - Get irdeto unpair all chipsets result
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/irdeto/unpair_all_chipsets`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `card_number`
     - **Type:** `string`
     - **Description:** Irdeto card number
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "result": "ok";
 }
 ```
-
 ---
 
 ## Endpoint: User - Get map of users for dealer
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/dealer_user_map`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `start`
     - **Type:** `Number`
@@ -1527,11 +1421,8 @@ HTTP/1.1 200 OK
     - **Type:** `Number`
     - **Description:** Get next users by id from start (<1000)
 ### Example Response:
-
-HTTP/1.1 200 OK
-
-[
-  {
+```
+{
     "accounts": [
       3
     ],
@@ -1575,78 +1466,72 @@ HTTP/1.1 200 OK
     "till": 0,
     "user_id": 4
   }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get new secret password
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/new_secret`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `size`
     - **Type:** `Number`
     - **Description:** size of generated password in symbols.
 ### Example Response:
-
-HTTP/1.1 200 OK
-
+```
 {
   "error": "",
   "secret": "ad50158d05"
 }
 ```
-
 ---
 
 ## Endpoint: User - Get overwrite parental pin code result
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/irdeto/overwrite_parental_pin_code`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `card_number`
     - **Type:** `string`
     - **Description:** Irdeto card number
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "result": "ok";
 }
 ```
-
 ---
 
 ## Endpoint: User - Get synchronize result
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/irdeto/overwrite_synchronize`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `card_number`
     - **Type:** `string`
     - **Description:** Irdeto card number
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "result": "ok";
 }
 ```
-
 ---
 
 ## Endpoint: User - Get system group
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/system_group`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `sys_group_id`
     - **Type:** `string`
     - **Description:** System group id
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "group_name": "name",
   "group_info": "info",
@@ -1660,20 +1545,19 @@ HTTP/1.1 200 OK
 ]
 }
 ```
-
 ---
 
 ## Endpoint: User - Get system groups
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/system_groups`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `schedule_link_id`
     - **Type:** `Number`
     - **Description:** Schedule link id.
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "group_id" : 1,
   "group_name" : "Wheel",
@@ -1682,35 +1566,32 @@ HTTP/1.1 200 OK
   "fids" : [1,2]
  }
 ```
-
 ---
 
 ## Endpoint: User - Get system users short data
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/systemusersshort`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "user_id" : "1",
   "login" : "test"
  }
 ```
-
 ---
 
 ## Endpoint: User - Get system users
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/system_users`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
-          {
+```
+{
             "ip4": "0.0.0.0",
             "ip6": "::",
             "is_dealer": false,
@@ -1723,20 +1604,17 @@ HTTP/1.1 200 OK
             ],
             "user_id": -1
           }
-        ]
 ```
-
 ---
 
 ## Endpoint: User - Get tel numbers
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/tel_numbers`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
+```
 {
 	"num_id" : 1,
 	"slink_id" : 2,
@@ -1748,25 +1626,21 @@ HTTP/1.1 200 OK
 	"password" : "pass",
 	"allowed_cid" : "cid"
 }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get user activation codes
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/activation_codes`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
     - **Description:** Account id.
 ### Example Response:
-
-HTTP/1.1 200 OK
-
-[
-         {
+```
+{
            "access_card_number": 1,
            "created": 1571051245,
            "deleted": 0,
@@ -1779,24 +1653,21 @@ HTTP/1.1 200 OK
            "part_6": 25588,
            "state": 32768055
          }
-       ]
 ```
-
 ---
 
 ## Endpoint: User - Get user contacts
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/contacts`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
     - **Description:** Users unique id.
 ### Example Response:
-
-HTTP/1.1 200 OK
- [
-  {
+```
+{
                 "id" : "1",
                 "uid" : "1",
                 "person" : "",
@@ -1807,22 +1678,20 @@ HTTP/1.1 200 OK
                 "email" : "",
                 "id_exec_man" : ""
          }
- ]
 ```
-
 ---
 
 ## Endpoint: User - Get user full info
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/full_info`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
     - **Description:** Users unique ID.
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "accounts": [
     2
@@ -1884,52 +1753,46 @@ HTTP/1.1 200 OK
   "work_telephone": ""
 }
 ```
-
 ---
 
 ## Endpoint: User - Get user groups
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/groups`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
- {
+```
+{
      "group_id": "1",
      "group_name": "Users"
  }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get groups for user
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/get_groups_for_user`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `number`
     - **Description:** User ID
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
-    {
+```
+{
       "group_id" :  111
       "group_name" : "users"
     }
-]
 ```
-
 ---
 
 ## Endpoint: User - Get user tech params
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/tech_params`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
@@ -1938,11 +1801,8 @@ HTTP/1.1 200 OK
     - **Type:** `Number`
     - **Description:** Account id.
 ### Example Response:
-
-HTTP/1.1 200 OK
-
-[
-         {
+```
+{
            "id": 1,
            "param": "asd",
            "passwd": "123",
@@ -1962,39 +1822,34 @@ HTTP/1.1 200 OK
            "type_id": 1,
            "type_name": "web"
          }
-       ]
 ```
-
 ---
 
 ## Endpoint: User - Get user total bonus
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/total_bonus`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-
+```
 {
   "total" : 500.5
 }
 ```
-
 ---
 
 ## Endpoint: User - Get user unused prepaid traffic
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/unused_prepaid`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `number`
     - **Description:** User ID
 ### Example Response:
-
-HTTP/1.1 200 OK
-
+```
 {
   "bytes_in_mbyte" : 1048576,
   "units" : [
@@ -2003,20 +1858,19 @@ HTTP/1.1 200 OK
   ]
 }
 ```
-
 ---
 
 ## Endpoint: User - Get users access cards
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/access_cards`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `number`
     - **Description:** User ID
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   [
      "id": 1,
@@ -2027,46 +1881,45 @@ HTTP/1.1 200 OK
   ]
 }
 ```
-
 ---
 
 ## Endpoint: User - Get users count
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/users_count`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `is_card`
     - **Type:** `number`
     - **Description:** 1 = true or 0 = false
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
   "count": 498
 }
 ```
-
 ---
 
 ## Endpoint: User - Get users in group
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/group_users`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `group_id`
     - **Type:** `number`
     - **Description:** Group ID
 ### Example Response:
-
-HTTP/1.1 200 OK
 ```
 
+```
 ---
 
 ## Endpoint: User - Get users list
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/users_list`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `from`
     - **Type:** `number`
@@ -2078,8 +1931,7 @@ HTTP/1.1 200 OK
     - **Type:** `number`
     - **Description:** 1 = true or 0 = false
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 {
  "count": 1,
  "users": [
@@ -2096,19 +1948,17 @@ HTTP/1.1 200 OK
  ]
 }
 ```
-
 ---
 
 ## Endpoint: User - Get web settings
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/web_settings`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
-    {
+```
+{
       "user_id" : "1",
       "login" : "test",
       "password" : "0177c054",
@@ -2122,65 +1972,58 @@ HTTP/1.1 200 OK
       "groups" : [1],
       "accounts" : ["1"],
       "till" : "0"
-     },
-...
-]
+     }
 ```
-
 ---
 
 ## Endpoint: User - Move all expired cards
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/clear_expired_card`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Post user contacts
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/contacts`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
     - **Description:** Search value
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Restore user
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/restore_user`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Search accounts
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/accounts/search`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
- {
+```
+{
      "account_id" : "1",
      "user_id" : "1",
      "balance" : "800",
@@ -2206,21 +2049,18 @@ HTTP/1.1 200 OK
      "block_type": 1,
      "username" : "User"
  }
-]
 ```
-
 ---
 
 ## Endpoint: User - Search users
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/search`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
- {
+```
+{
   "user_id" : "1",
   "login" : "test",
   "password" : "0177c054",
@@ -2235,34 +2075,30 @@ HTTP/1.1 200 OK
   "accounts" : [1],
   "till" : "0"
  }
-]
 ```
-
 ---
 
 ## Endpoint: User - Set user 1c status
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/set_1c_status`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Short search users
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/short_search`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
-[
- {
+```
+{
   "user_id" : "1",
   "login" : "test",
   "password" : "0177c054",
@@ -2272,177 +2108,164 @@ HTTP/1.1 200 OK
   "card_user": 0,
   "accounts":[]
  }
-]
 ```
-
 ---
 
 ## Endpoint: User - Transfer service links between accounts
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/servicelinks/transfer`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "service_link_id" : 1 }
 ```
-
 ---
 
 ## Endpoint: User - Update account
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/accounts`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Update accounts group
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/accounts_group`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Update card user info (block card)
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/block_card`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `card_id`
     - **Type:** `Number`
     - **Description:** card unique ID.
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Update card userinfo (unblock card)
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/unblock_card`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `card_id`
     - **Type:** `Number`
     - **Description:** card unique ID.
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Update dealer
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/dealer`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Update group
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/group`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Update groups operations
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/groups_op`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Update privilege to dealer
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/grant_priv_to_dealer`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Update service link freezed
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/servicelinks/freezed`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result": "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Update system groups
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/system_groups`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Update system user
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/system_users`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok"}
 ```
-
 ---
 
 ## Endpoint: User - Update user lifestream_id
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/lifestream_id`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
@@ -2451,43 +2274,40 @@ HTTP/1.1 200 OK
     - **Type:** `String`
     - **Description:** New lifestream_id.
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "result" : "ok" }
 ```
-
 ---
 
 ## Endpoint: User - Update user tech params
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/tech_params`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "service_id" : "1"}
 ```
-
 ---
 
 ## Endpoint: User - Update user
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users`
+- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "user_id" : "1"}
 ```
-
 ---
 
 ## Endpoint: User - Upload user contract
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/contracts/upload`
+- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
@@ -2499,10 +2319,8 @@ HTTP/1.1 200 OK
     - **Type:** `object`
     - **Description:** ODT file in request body
 ### Example Response:
-
-HTTP/1.1 200 OK
+```
 { "contract_id" : "1" }
 ```
-
 ---
 
