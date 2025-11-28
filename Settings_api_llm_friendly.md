@@ -6,123 +6,131 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/is_unique_radius_logins`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "is_unique": true,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Close hotspot session
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/close_hs_session`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "key" : "key",
   "ip_address" : "1.2.3.4"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create DB archive
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/db_archives`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create DB archive
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/db_archives_with_connection`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create DB scheduled for archive db
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/db_archives_schedule`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create NAS
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/nases`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "nas_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create NetFlow provider
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/netflow_providers`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "provider_id": 3,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create additional params
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/additionalparams`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "aparam_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create and Update hotspot session
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/refresh_hs_session`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "ip_address": "1.2.3.3",
   "key" : "key",
@@ -130,16 +138,17 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "pass" : "myPass"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create hotspot session
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/init_hs_session`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "ip_address": "1.2.3.3",
   "key" : "key",
@@ -147,31 +156,33 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "pass" : "myPass"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create available activating card
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/available_activating_card`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "group_id" : 1,
   "is_enabled" : 1
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create available docs settings
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/available_docs`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "id":1,
   "group_id" : 1,
@@ -179,55 +190,58 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "available_docs" : 1
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create collector
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/collectors`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "collector_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create document profiles
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/documents/profiles`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "profile_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create document replacements
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/documents/replacements`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create document templates
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/documents/templates`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `name`
     - **Type:** `String`
@@ -239,198 +253,211 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     - **Type:** `object`
     - **Description:** ODT file in request body
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "template_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create edit profile settings
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/edit_profile`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "group_id" : 1,
   "is_enabled" : 1,
   "available_fields" : 1
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create fw rule
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/fw_rules`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "rule_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create http server setting
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/http_servers`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "name" : "key",
   "url" : "http://test.com/subrout",
   "method" : 1
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create ip v4/v6 pool
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/ippools`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "pool_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create isg attribute
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/isg_attrs`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "isg_attr_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create isg profiles
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/isg_profiles`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "isg_profile_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create payment systems
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/payment_systems`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response: Not available
+
 ---
 
 ## Endpoint: Settings - Create post funds flow settings
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/funds_flow_settings`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create promised payment setting
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/promised_payments`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create radius account
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/radius_accounts`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "account_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create radius attr tunnel type
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/attr_tunnel_types`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "attr_type" : 1,
   "data_type" : 1
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create rentsoft settings
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/rentsoft_settings`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response: Not available
+
 ---
 
 ## Endpoint: Settings - Create router
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/routers`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "router_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create services and tariffs which user can connect by himself
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/independent_connect_services`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
  "name" : "Name",
  "group_id" : 1,
@@ -444,87 +471,93 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
  "is_search_ap_in_services" : 1
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create shaping service
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/shaping`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok",
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create supplier with service
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/suppliers_full`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "supplier_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create supplier
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/suppliers`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "supplier_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create tech support chat settings
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/ts_chat_settings`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "group_id" : 1,
   "is_enabled" : 1
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create tel supplier service
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/tel_suppliers/service`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "service_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create user by hotSpot login
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/add_user_hs_tariff`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "ip_address": "1.2.3.3",
   "key" : "key",
@@ -532,16 +565,17 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "pass" : "myPass"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create user`s tariff data for captive portal user
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/captive_portal_udata`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
  "tariff_id" : 666,
  "name" : "someName",
@@ -550,126 +584,133 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
  "group_id" : 22
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create voluntary suspensions
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/voluntary_suspensions`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok",
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Create/Update emergency calls
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/settings/emergency_calls`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete NAS
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/nases`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `nas_id`
     - **Type:** `Number`
     - **Description:** Radius nas id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete additional parameters
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/additionalparams`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `aparam_id`
     - **Type:** `Number`
     - **Description:** Add param identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete archive scheduled
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/db_archives_schedule`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `archive_id`
     - **Type:** `Number`
     - **Description:** Archive schedule ID
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete available activating card
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/available_activating_card`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `id`
     - **Type:** `Number`
     - **Description:** delete activating card
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete available docs settings
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/available_docs`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `id`
     - **Type:** `Number`
     - **Description:** edit avail report setting id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete available radius attr tunnel type
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/attr_tunnel_types`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `id`
     - **Type:** `Number`
@@ -678,515 +719,549 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     - **Type:** `Number`
     - **Description:** delete radius attr tunnel with attr_type
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete available reports settings
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/available_reports`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `id`
     - **Type:** `Number`
     - **Description:** edit avail report setting id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete collector
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/collectors`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `collector_id`
     - **Type:** `Number`
     - **Description:** traffic collector identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete doc profile
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/documents/profiles`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `profile_id`
     - **Type:** `Number`
     - **Description:** profile identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete doc templates
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/documents/templates`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `template_id`
     - **Type:** `Number`
     - **Description:** template identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete edit profile settings
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/edit_profile`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `id`
     - **Type:** `Number`
     - **Description:** edit profile setting id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete emergency calls
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/emergency_calls`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `service_id`
     - **Type:** `Number`
     - **Description:** service identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete firewall rules
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/fw_rules`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `rule_id`
     - **Type:** `Number`
     - **Description:** FW rule identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete funds flow settings
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/funds_flow_settings`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `funds_flow_settings_id`
     - **Type:** `Number`
     - **Description:** Funds flow settings id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete http server setting
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/http_servers`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `id`
     - **Type:** `Number`
     - **Description:** http server id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete ippool
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/ippools`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `pool_id`
     - **Type:** `Number`
     - **Description:** pool identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete tel supplier service
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/tel_suppliers/service`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `supplier_id`
     - **Type:** `Number`
     - **Description:** telephone supplier service identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete isg attrs
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/isg_attrs`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `isg_attr_id`
     - **Type:** `Number`
     - **Description:** ISG attribute id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete isg profiles
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/isg_profiles`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `isg_profile_id`
     - **Type:** `Number`
     - **Description:** ISG profile id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete key/value doc replacement
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/documents/replacements`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `key`
     - **Type:** `Number`
     - **Description:** key of key/value replacement
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete netflow provider
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/netflow_providers`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `provider_id`
     - **Type:** `Number`
     - **Description:** NF profider identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete payment systems
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/payment_systems`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `payment_system_id`
     - **Type:** `Number`
     - **Description:** Payment system id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete promised payment settings
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/promised_payments`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `promised_payment_settings_id`
     - **Type:** `Number`
     - **Description:** Promised payment settings id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete radius account
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/radius_accounts`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
     - **Description:** Radius account id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete rentsoft settings
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/rentsoft`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `rentsoft_setting_id`
     - **Type:** `Number`
     - **Description:** Rentsoft setting ID
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete router
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/routers`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `router_id`
     - **Type:** `Number`
     - **Description:** Router identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete services and tariffs which user can connect by himself
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/independent_connect_services`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `independent_connect_services_id`
     - **Type:** `Number`
     - **Description:** Setting identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete shaping service
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/shaping`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `shaping_id`
     - **Type:** `Number`
     - **Description:** Shaping service id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete supplier
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/suppliers`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `supplier_id`
     - **Type:** `Number`
     - **Description:** supplier identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete ts chat settings
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/ts_chat_settings`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `id`
     - **Type:** `Number`
     - **Description:** ts chat setting id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete user`s tariff data for captive portal user by id
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/captive_portal_udata`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `cp_utariff_data_id`
     - **Type:** `Number`
     - **Description:** captive portal user tariff data identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete voluntary suspension data
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/customer_voluntary_suspension`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `id`
     - **Type:** `Number`
     - **Description:** Voluntary suspension ID
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Delete voluntary suspensions
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/settings/voluntary_suspensions`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `voluntary_suspension_id`
     - **Type:** `Number`
     - **Description:** Voluntary suspensions id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Download document template file
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/documents/template_download`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `template_id`
     - **Type:** `Number`
     - **Description:** Template ID.
 ### Example Response:
+
+HTTP/1.1 200 OK
+binaryFile
 ```
 
-```
 ---
 
 ## Endpoint: Settings - Get  tech support chat settings
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/ts_chat_settings`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+[
 {
   "id": 2,
   "group_id" : 1,
   "is_enabled" : 1
 }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get Radius Accounts
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/radius_accounts`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
     - **Description:** if exist return data by id, else array of all.
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "add_nas_attributes": false,
     "id": 1,
     "name": "test",
@@ -1198,102 +1273,119 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     "name": "trea",
     "password": "tea"
   }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get additional params
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/additionalparams`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
   "id" : "1",
   "name" : "extra_param",
   "display_name" : "Extra Param",
   "visible" : "1"
  }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get all doc replacements
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/documents/replacements`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "key": "Apr",
     "value": "aprelya"
   }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get available activating card
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/available_activating_card`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+[
 {
   "id": 2,
   "group_id" : 1,
   "is_enabled" : 1
 }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get available docs settings
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/available_docs`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+[
 {
   "id": 2,
   "group_id" : 1,
   "is_enabled" : 1,
   "available_docs" : 1
 }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get available reports settings
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/available_reports`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+[
 {
   "id": 2,
   "group_id" : 1,
   "is_enabled" : 1,
   "available_reports" : 1
 }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get collector statistics
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/collector_stats`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `collector_id`
     - **Type:** `Number`
     - **Description:** collector identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "nf_errors_count": 0,
   "nf_errors_count_last": 0,
@@ -1303,32 +1395,36 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "uptime_last": 76
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get collectors
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/collectors`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "comments": "Default",
     "collector_id": 0,
     "name": "System"
   }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get config dhcp6 server
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/dhcp6/config`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "arguments": {
     "Dhcp6": {
@@ -1467,69 +1563,78 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "result": 0
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get core time
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/core_time`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "time": 12321232,
   "tm_zone" : "tz name",
   "tm_gmtoff" : 10800
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get custom isg attrs
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/custom_isg_attrs`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "id": 1,
     "attr_id": 1,
     "vendor_id": 1,
     "attr_name": "attr"
   }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get db archive list
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/db_archives`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+[
 {
 	"id" : 1,
 	"begin" : "123",
 	"end" : "231",
 	"status" : 2
 }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get db archive schedule list
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/db_archives_schedule`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `start_date`
     - **Type:** `Number`
     - **Description:** Start date
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+[
 {
 	"error": "",
 	"hour": 12,
@@ -1542,32 +1647,37 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
 	"type": 1,
 	"use_connection": true
 }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get default system setting  tax
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/system_vat_tax`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
    "value": 13.0
 }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get document profiles
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/documents/profiles`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+   {
      "created": 1567756397,
      "modified": 1567756397,
      "name": "Documents for legal entity (default)",
@@ -1586,18 +1696,21 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
      "profile_id": 2,
      "templates": []
    }
+ ]
 ```
+
 ---
 
 ## Endpoint: Settings - Get document templates
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/documents/templates`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+   {
      "created": 0,
      "modified": 0,
      "name": "Invoice for legal entity",
@@ -1606,51 +1719,60 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
      "template_id": 1,
      "type": 1
    }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get dynamic shaped services
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/shaping_services`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
      "service_id" : 405,
      "service_name" : "MyServiceName",
      "comment" : "Mycomment"
  }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get edit profile settings
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/edit_profile`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+[
 {
   "id": 2,
   "group_id" : 1,
   "is_enabled" : 1,
   "available_fields" : 1
 }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get emergency calls list
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/emergency_calls`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "service_id": 0,
     "tel_directions": [
       2
@@ -1662,18 +1784,21 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
       2
     ]
   }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get firewall rules
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/fw_rules`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
    "affector_id": 0,
    "affector_type": 0,
    "comment": "123",
@@ -1685,35 +1810,39 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
    "text": "ls -lah",
    "user_id": 332
  }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get funds flow settings
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/funds_flow_settings`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[{
                 "id": 1,
                 "group_id": 0,
                 "priority": 0,
                 "is_enabled": 0
-            }
+            }]
 ```
+
 ---
 
 ## Endpoint: Settings - Get fw event masks
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/fw_subst`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "events": 4093103734527,
     "subst_info": "EMAIL"
   },
@@ -1721,17 +1850,19 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     "events": 4093103734527,
     "subst_info": "ACCOUNT_ID"
   }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get fw events mask
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/fw_events`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
  "events_human_readable": [
    "inet on",
@@ -1772,69 +1903,80 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "events_mask": 4677219385343
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get http servers setting
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/http_servers`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+[
 {
   "id": 3,
   "name" : "key",
   "url" : "http://test.com/subrout",
   "method" : 1
 }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get ip pools
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/ippools`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "id": 1,
     "ip": "10.1.5.0",
     "mask": "255.255.255.0",
     "mask_dec": 24,
     "name": "1"
   }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get isg attrs list
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/isg_attrs`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "attr_id": 15,
     "attr_name": "moscEDITEDow",
     "id": 2,
     "vendor_id": 66
   }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get isg profiles
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/isg_profiles`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "blocked_account_code": 3,
     "id": 3,
     "lease_address": false,
@@ -1860,17 +2002,19 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     "switch_type_id": 5,
     "unblocked_account_code": 2
   }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get license
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/license`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "cur_accounts": 10,
   "cur_users": 10,
@@ -1880,17 +2024,19 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "till": 1852255976
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get list of captive portal user tariff data
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/captive_portal_udata_list`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
   "cp_utariff_data_id" : 13,
   "name": "name",
   "tariff_id" : 666,
@@ -1906,21 +2052,24 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "is_enabled" : 0
   "group_id" : 22
  }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get nas list OR get Nas by id
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/nases`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `nas_id`
     - **Type:** `Number`
     - **Description:** if nas identifier exist, else all nas list
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "affector_id": 0,
     "comment": "123",
     "events": 1,
@@ -1931,36 +2080,42 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     "text": "ls -lah",
     "user_id": 332
   }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get netflow providers
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/netflow_providers`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "ip_address": "127.0.0.1",
     "collector_id": 0,
     "comments": "",
     "provider_id": 1,
     "name": "local"
   }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get payment systems template
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/payment_systems_template`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
    "data": [
      {
        "id": 1,
@@ -1990,18 +2145,21 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
    "id": 1,
    "name": ""
  }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get payment systems
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/payment_systems`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
    "data": [
      {
        "id": 1,
@@ -2032,18 +2190,20 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
    "name": "",
    "group_id": 0
  }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get promised payments settings
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/promised_payments`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[{
             "flags": 0,
             "free_balance": 0.0,
             "group_id": 0,
@@ -2058,15 +2218,15 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
             "service_id": 0,
             "use_free_balance": 0,
             "use_min_balance": 0
-        }
+        }]
 ```
+
 ---
 
 ## Endpoint: Settings - Get registry settings form
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/registry_settings_form`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `group_id`
     - **Type:** `Number`
@@ -2075,8 +2235,10 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     - **Type:** `Number`
     - **Description:** Object ID ( 0 - core, 1..n - (id)traffic collector)
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
    "validation_flags": 0,
    "value_type": 4,
    "description": "path to .utm file with detailed traffic",
@@ -2088,21 +2250,24 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
    ],
    "setting_id": 65537
  }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get registry settings group
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/registry_settings_group`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `comp_id`
     - **Type:** `Number`
     - **Description:** component identifier (1 - core, 2 - traffic collector)
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "allow_multiple_objects": false,
     "component_id": 1,
     "description": "Tariffication settings",
@@ -2114,32 +2279,36 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     "description": "Card user settings",
     "group_id": 3
   }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get registry value REG_BYTES_IN_KBYTE
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/bytes_in_kb`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": 1024,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get rentsoft settings
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/rentsoft_settings`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
   "cp_utariff_data_id" : 13,
   "name": "name",
   "tariff_id" : 666,
@@ -2147,32 +2316,35 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "is_enabled" : 1
   "group_id" : 22
  }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get response config reload dhcp6 server
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/dhcp6/config_reload`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": 0,
   "text": "Configuration successful."
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get response config reload dhcp6 server
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/dhcp6/config_write`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "arguments": {
     "filename": "/netup/utm5/dhcpv6_config_helper.json",
@@ -2182,13 +2354,13 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "text": "Configuration written to /netup/utm5/dhcpv6_config_helper.json successful"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get result of making payment for supplier
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/make_payment_for_supplier`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `supplier_id`
     - **Type:** `Number`
@@ -2206,50 +2378,55 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     - **Type:** `Number`
     - **Description:** type of payment
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "absolute_sum": 1.2
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get result of start to update status of all DB archives
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/db_archives_update`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok",
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get result of start to verify all DB archives
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/db_archives_verify`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok",
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get routers
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/routers`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "address": "0.0.0.0",
     "comments": "Local",
     "id": 1,
@@ -2258,18 +2435,21 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     "ns_state": 0,
     "password": "",
   }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get services and tariffs which user can connect by himself
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/independent_connect_services`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
   "id" : 1,
   "name" : "Name",
   "group_id" : 1,
@@ -2281,37 +2461,42 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "accounting_period_id" : 1,
   "multiple_linking" : 0
  }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get setting by name
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/setting`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `setting_name`
     - **Type:** `Number`
     - **Description:** setting name
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "value": "/netup/utm5/db/"
   }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get shaping
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/shaping`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `service_id`
     - **Type:** `Number`
     - **Description:** Service ID.
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "ingress_egress": [
     {
@@ -2354,19 +2539,20 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "turbo_mode_settings": []
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get supplier
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/supplier`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `supplier_id`
     - **Type:** `Number`
     - **Description:** Supplier ID.
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "account": "123",
   "act_adress": "rio",
@@ -2393,46 +2579,53 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "type": 0
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get suppliers directions
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/tel_suppliers/directions`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
      "dir_id": 2,
      "supplier_id": 3
  }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get suppliers zones
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/tel_suppliers/zones`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
      "dir_id": 2,
      "supplier_id": 3
  }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get switch tariff  settings
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/switch_tariffs`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
 	"id" :  11,
 	"group_id" : 2 ,
@@ -2453,16 +2646,17 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
 ]
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get switch tariff settings full data
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/switch_tariffs_full`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
 	"id" :  11,
 	"group_id" : 2 ,
@@ -2484,13 +2678,13 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
 ]
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get tech params slinks
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/tech_params_slinks`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
@@ -2499,23 +2693,28 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     - **Type:** `Number`
     - **Description:** Account ID.
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
    "service_name": "iptv ORT",
    "slink_id": 6
  }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get tech params
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/tech_params`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
    "id": 1,
    "name": "web"
  },
@@ -2523,14 +2722,15 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
    "id": 2,
    "name": "email"
  }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get tel supplier report of charges
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/tel_suppliers/report_of_charges`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `supplier_id`
     - **Type:** `Number`
@@ -2542,7 +2742,9 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     - **Type:** `Number`
     - **Description:** end data ,in sec from epoch
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+  [
 {
     "user_id" : 1,
     "user_login" : "loging",
@@ -2558,14 +2760,15 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     "calling_station_id" : "421",
     "charge_date" : 12131232
 }
+  ]
 ```
+
 ---
 
 ## Endpoint: Settings - Get tel supplier report of invoices
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/tel_suppliers/report_of_invoices`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `supplier_id`
     - **Type:** `Number`
@@ -2577,7 +2780,9 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     - **Type:** `Number`
     - **Description:** end data ,in sec from epoch
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+  [
 {
     "account_id" : 1,
     "invoice_id" : 1,
@@ -2593,14 +2798,15 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     "formatted_num" : "form",
     "service_place" : "someplace"
 }
+  ]
 ```
+
 ---
 
 ## Endpoint: Settings - Get tel supplier report of payments
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/tel_suppliers/report_of_payments`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `supplier_id`
     - **Type:** `Number`
@@ -2612,8 +2818,10 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     - **Type:** `Number`
     - **Description:** end data ,in sec from epoch
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+  [
+	{
 		"currency_type": 1,
 		"sum": 1.2,
 		"payment_date": 1123123213,
@@ -2625,14 +2833,15 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
 		"payment_date": 1123123213,
 		"reason_of_payment": "myreason"
 	}
+  ]
 ```
+
 ---
 
 ## Endpoint: Settings - Get tel supplier report of users
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/tel_suppliers/report_of_users`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `supplier_id`
     - **Type:** `Number`
@@ -2644,7 +2853,9 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     - **Type:** `Number`
     - **Description:** end data ,in sec from epoch
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+  [
 {
  "client" : {
   	"account_id" : 1,
@@ -2658,20 +2869,22 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
      },
  "contract_place" : "Pupkino town"
 }
+  ]
 ```
+
 ---
 
 ## Endpoint: Settings - Get tel suppliers service
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/tel_suppliers/service`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `supplier_id`
     - **Type:** `Number`
     - **Description:** Supplier identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "service_data": {
     "comment": "Supplier-1TelServiceComment",
@@ -2725,32 +2938,37 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   }
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Get tunnel types
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/attr_tunnel_types`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+[
 {
   "id": 2,
   "attr_type" : 1,
   "data_type" : 1
 }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get voluntary all suspensions
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/all_voluntary_suspensions`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+[
 {
      "account_id":1,
      "block_date_end":1679950800,
@@ -2758,18 +2976,20 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
      "block_id":10,
      "id":1
  }
+]
 ```
+
 ---
 
 ## Endpoint: Settings - Get voluntary suspensions settings
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/settings/voluntary_suspensions`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[{
            "block_end": 0,
            "block_id": 0,
            "block_start": 0,
@@ -2787,131 +3007,138 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
            "service_id": 0,
            "use_free_balance": 1,
            "use_min_balance": 1
-       }
+       }]
 ```
+
 ---
 
 ## Endpoint: Settings - Notifier for captive user login
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/login_captive_user`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Put payment systems
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/payment_systems`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response: Not available
+
 ---
 
 ## Endpoint: Settings - Put registry setting
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/registry_setting`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response: Not available
+
 ---
 
 ## Endpoint: Settings - Put switch tariffs
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/switch_tariffs`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response: Not available
+
 ---
 
 ## Endpoint: Settings - Test db connection
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/test_db_connection`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "connection": "database=utm_archive1; database_host=127.0.0.1; database_login=root; database_password=root; database_port=3307; dbcount=6;database_reconnect_count=5; database_reconnect_sleep=2; database_charset=utf8",
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update NAS by Id
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/nases`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update NetFlow provider
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/netflow_providers`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update additional params
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/additionalparams`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update available activating card
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/available_activating_card`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "id":1,
   "group_id" : 1,
   "is_enabled" : 1
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update available docs settings
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/available_docs`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "id":1,
   "group_id" : 1,
@@ -2919,16 +3146,17 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "available_docs" : 1
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update available reports settings
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/available_reports`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "id":1,
   "group_id" : 1,
@@ -2936,50 +3164,52 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "available_reports" : 1
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update collector
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/collectors`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update config dhcpv6 server
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/dhcp6/set_config`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response: Not available
+
 ---
 
 ## Endpoint: Settings - Update document profiles
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/documents/profiles`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update document templates
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/documents/templates`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `name`
     - **Type:** `String`
@@ -2994,21 +3224,23 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
     - **Type:** `object`
     - **Description:** ODT file in request body
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update edit profile settings
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/edit_profile`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "id": 2,
   "group_id" : 1,
@@ -3016,44 +3248,47 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "available_fields" : 1
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update funds flow settings
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/funds_flow_settings`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update fw rule
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/fw_rules`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "rule_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update http server setting
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/http_servers`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "id" : 3,
   "name" : "key",
@@ -3061,228 +3296,243 @@ This document describes the endpoints for the 'Settings' API section for UTM5 is
   "method" : 1
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update ip v4/v6 pool
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/ippools`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update isg attribute
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/isg_attrs`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update isg profiles
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/isg_profiles`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update promised payment setting
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/promised_payments`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update radius account
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/radius_accounts`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "account_id": 2,
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update radius attr tunnel types
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/attr_tunnel_types`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "id": 2,
   "attr_type" : 1,
   "data_type" : 1
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update rentsoft settings
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/rentsoft_settings`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response: Not available
+
 ---
 
 ## Endpoint: Settings - Update router
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/routers`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update services and tariffs which user can connect by himself
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/independent_connect_services`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response: Not available
+
 ---
 
 ## Endpoint: Settings - Update shaping service
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/shaping`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update supplier
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/suppliers`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update tech support chat settings
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/ts_chat_settings`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "id": 2,
   "group_id" : 1,
   "is_enabled" : 1
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update tel supplier service
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/tel_suppliers/service`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update user`s tariff data for captive portal user
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/captive_portal_udata`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Update voluntary suspensions
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/voluntary_suspensions`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Settings - Validate tel supplier directions
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/settings/tel_suppliers/validate_dirs`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `supplier_id`
     - **Type:** `Number`
     - **Description:** Supplier identifier
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
  "founded_dir_id": 0,
  "founded_supplier_id": 0,
  "founded_zone_id": 0
 }
 ```
+
 ---
 

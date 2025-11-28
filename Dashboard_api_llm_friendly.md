@@ -6,14 +6,15 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/ts_chat/admin_msgs`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `admin_id`
     - **Type:** `Number`
     - **Description:** system user identifier
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
    "admin_id": -1,
    "client_id": 494,
    "is_admin_origin": false,
@@ -26,31 +27,35 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
    "is_admin_origin": false,
    "last_update": 1601474202,
    "msg": "{\"message\": \"mySUpper client message\"}"
- }
+ }...
+]
 ```
+
 ---
 
 ## Endpoint: Dashboard - Get core build info
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/core_build_info`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
+
+HTTP/1.1 200 OK
+[]
 ```
 
-```
 ---
 
 ## Endpoint: Dashboard - Get core connections
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/core_connections`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "host": "127.0.0.1",
     "id": 2,
     "port": 54052,
@@ -71,17 +76,19 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
     "staff_id": -1,
     "type": 0
   }
+]
 ```
+
 ---
 
 ## Endpoint: Dashboard - Get customer portal module connections
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/cp_connections`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "127.0.0.1:59004": {
     "Object": {
@@ -101,16 +108,17 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
   }
 }
 ```
+
 ---
 
 ## Endpoint: Dashboard - Get database Stat
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/db_stats`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
  "queries": 6063,
  "questions": 2,
@@ -121,17 +129,19 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
  "uptime": 22647
 }
 ```
+
 ---
 
 ## Endpoint: Dashboard - Get database processes
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/db_processes`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "command": "Sleep",
     "db": "UTM5",
     "host": "localhost",
@@ -150,18 +160,22 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
     "state": "",
     "time": 20,
     "user": "root"
-  }
+  },
+  ...
+]
 ```
+
 ---
 
 ## Endpoint: Dashboard - Get hotspot sessions
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/hotspot_sessions`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+[
 {
    "nas_sid" : "test",
    "core_session_id" : 123456789,
@@ -175,15 +189,16 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
    "end" : 123456789,
    "balance" : 123456789,
    "web_session_id": "someID"
- }
+ }..
+]
 ```
+
 ---
 
 ## Endpoint: Dashboard - Get radius sessions
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/radius_sessions`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `page`
     - **Type:** `Number`
@@ -195,8 +210,10 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
     - **Type:** `String`
     - **Description:** search pattern
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "account_id": 0,
     "acct_delay_time": 0,
     "acct_inp_giga": 123,
@@ -227,17 +244,19 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
     "slink_id": 0,
     "uname": ""
   }
+]
 ```
+
 ---
 
 ## Endpoint: Dashboard - Get ram memory stat in KBytes
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/ram_stat`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
  "MemTotal" : 16000,
  "MemFree" : 6000,
@@ -247,32 +266,36 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
  "SwapCached" : 0,
 }
 ```
+
 ---
 
 ## Endpoint: Dashboard - Get rest connections
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/rest_connections`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "connection_status": "ESTAB",
     "local_ip_port": "127.0.0.1:9080",
     "peer_ip_port": "127.0.0.1:34862"
   }
+]
 ```
+
 ---
 
 ## Endpoint: Dashboard - Get server stat
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/server_stat`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "avr_load_last_15min": "1,21",
   "avr_load_last_5min": "1,60",
@@ -281,17 +304,19 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
   "uptime": " 2:44"
 }
 ```
+
 ---
 
 ## Endpoint: Dashboard - Get stat created users
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/stat_created_users`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "data": 1589384568,
     "login": "{x}",
     "user_id": 5
@@ -301,18 +326,22 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
     "login": "0",
     "user_id": 6
   }
+  ...
+]
 ```
+
 ---
 
 ## Endpoint: Dashboard - Get stat deleted users
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/stat_deleted_users`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "data": 1589384568,
     "login": "{x}",
     "user_id": 5
@@ -322,14 +351,16 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
     "login": "0",
     "user_id": 6
   }
+  ...
+]
 ```
+
 ---
 
 ## Endpoint: Dashboard - Get tariffs history for visualisation
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/tariffs_history_graphic`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `data_from`
     - **Type:** `Number`
@@ -338,8 +369,10 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
     - **Type:** `Number`
     - **Description:** Unix data to what link date return result
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "graph_data": {
       "1.8": {
         "count_acc": 6
@@ -375,14 +408,15 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
     "tariff_id": 1,
     "tariff_name": "iptra"
   }
+]
 ```
+
 ---
 
 ## Endpoint: Dashboard - Get tariffs history
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/tariffs_history`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `data_from`
     - **Type:** `Number`
@@ -391,8 +425,10 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
     - **Type:** `Number`
     - **Description:** Unix data to what link date return result
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "link_date": 1597830323,
     "tariff_id": 1,
     "tariff_name": "iptra",
@@ -406,18 +442,22 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
     "unlink_date": 1598540235,
      "account_id": 1
   }
+  ...
+]
 ```
+
 ---
 
 ## Endpoint: Dashboard - Get tech support chat customer messages
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/ts_chat/new_customer_msgs`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
    "admin_id": 0,
    "client_id": 494,
    "is_admin_origin": false,
@@ -431,21 +471,24 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
    "last_update": 0,
    "msg": "someMessages"
  }
+]
 ```
+
 ---
 
 ## Endpoint: Dashboard - Get top of process statistics
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/dashboard/top_processes`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `sort_type`
     - **Type:** `String`
     - **Description:** mem or cpu for sorting
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "%CPU": "2.4",
     "%MEM": "3.7",
     "PID": "16800",
@@ -459,24 +502,27 @@ This document describes the endpoints for the 'Dashboard' API section for UTM5 i
     "PPID": "16800",
     "Process_name": "clangbackend"
   }
+  ...
+]
 ```
+
 ---
 
 ## Endpoint: Dashboard - Notify all avaliable admin about new msg
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/dashboard/tech_support_chat`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response: Not available
+
 ---
 
 ## Endpoint: Dashboard - Update own password
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/dashboard/change_own_password`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response: Not available
+
 ---
 

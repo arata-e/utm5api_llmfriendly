@@ -6,11 +6,12 @@ This document describes the endpoints for the 'Login' API section for UTM5 isp b
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/login`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "session_id" : "UCHdmbW231fdsFSew21"}
 ```
+
 ---
 

@@ -6,24 +6,24 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/currency_rate_rbc`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `id`
     - **Type:** `Number`
     - **Description:** currency id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
  "rate" = 1.1
 }
 ```
+
 ---
 
 ## Endpoint: Reports - Get report blocks
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/blocks`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
@@ -44,8 +44,10 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** unique id , if zero ,then all related accounts
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+   [
+     {
        "block_id": 1,
        "account_id": 2,
        "block_end": 2000000000,
@@ -56,14 +58,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
        "is_deleted": false,
        "login": "4952"
      }
+   ]
 ```
+
 ---
 
 ## Endpoint: Reports - Get report general info
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/general`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
@@ -90,8 +93,9 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** Limit of report rows
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[{
 	"account_id": 1,
 	"dialup": 4.0,
 	"full_name": "testFull name",
@@ -109,15 +113,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
 	"tax": 0.0,
 	"telephony": 0.0,
 	"vod": 0.0
-}
+}]
 ```
+
 ---
 
 ## Endpoint: Reports - Get report of burning payments
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/burning_payments`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
@@ -141,8 +145,9 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** User group ID, if zero , then user_id or account_id != 0
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[{
 	"account_id": 36,
 	"already_discounted": 0.0,
 	"amount": 8.0,
@@ -153,15 +158,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
 	"last_date": 1668713068,
   "human_last_date": "Thu Jan  1 03:00:00 1970",
 	"login": "34"
-}
+}]
 ```
+
 ---
 
 ## Endpoint: Reports - Get report of custom services
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/custom_services`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
@@ -176,8 +181,10 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** unique id , if zero ,then all related accounts
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+    {
       "account_id": 1,
       "amount": 0.0,
       "amount_with_tax": 0.0,
@@ -189,14 +196,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
       "service_key": "servKEY",
       "service_name": "servName"
     }
+]
 ```
+
 ---
 
 ## Endpoint: Reports - Get report of dhcp leases
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/dhcp_leases`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
@@ -214,8 +222,10 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** desired accounting period, if zero ,then resp for time range [start;end]
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "expired": 1570270250,
     "ip": "192.168.0.2",
     "mac": "02:42:af:11:d0:ae",
@@ -237,14 +247,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     "user_id": 1,
     "user_login": "zhora"
   }
+]
 ```
+
 ---
 
 ## Endpoint: Reports - Get report of funds flows
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/funds_flows`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `start`
     - **Type:** `Number`
@@ -256,8 +267,9 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** unique id , if zero ,then all related accounts
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[{
 	"account_id_from": 0,
 	"account_id_to": 0,
 	"amount": 0.0,
@@ -266,15 +278,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
 	"full_name": "unknown",
 	"login": "unknown",
 	"user_id": 0
-}
+}]
 ```
+
 ---
 
 ## Endpoint: Reports - Get report of invoices doc list
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/invoices_doc_list`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
@@ -301,8 +313,9 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** download doc or list it
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[{
 	"account_id": 1,
 	"alt_id": "1",
 	"entries": [{
@@ -341,15 +354,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
 	"total_sum_with_tax": 12.0,
 	"total_tax": 0.0,
 	"uid": 1
-}
+}]
 ```
+
 ---
 
 ## Endpoint: Reports - Get report of other charges
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/other_charges`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
@@ -373,8 +386,9 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** User group ID, if zero , then user_id or account_id != 0
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[{
 	"account_id": 34,
 	"charge": 33.0,
 	"charge_with_tax": 33.0,
@@ -401,15 +415,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
 	"full_name": "",
 	"login": "34",
 	"service_type": 18
-}
+}]
 ```
+
 ---
 
 ## Endpoint: Reports - Get report of sessions
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/sessions`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
@@ -430,8 +444,9 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** desired accounting period, if zero ,then resp for time range [start;end]
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[{
 	"account_id": 0,
 	"acct_inp_giga": 0,
 	"acct_inp_oct": 0,
@@ -463,15 +478,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
 	"slink_id": 0,
 	"total_cost": 0.0,
 	"uname": ""
-}
+}]
 ```
+
 ---
 
 ## Endpoint: Reports - Get report of traffic detailed
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/traffic_detailed`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `accounting_period_id`
     - **Type:** `Number`
@@ -483,7 +498,8 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** count of desired items in reply, be default(if zero) = 1000
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
        "is_finish": 1,
        "traffic_stat_list": [
@@ -518,13 +534,13 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
        ]
      }
 ```
+
 ---
 
 ## Endpoint: Reports - Get report of traffic
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/traffic`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
@@ -551,8 +567,10 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** type of grouping
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "account_id": 123,
     "base_cost": 123.0,
     "bytes": 123,
@@ -560,14 +578,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     "login": "unknown",
     "tclass": 123
   }
+]
 ```
+
 ---
 
 ## Endpoint: Reports - Get report of user log
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/users_log`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `start`
     - **Type:** `Number`
@@ -582,8 +601,10 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** action_id from enum
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+   [
+     {
        "action": 3,
        "comment": "4951",
        "date": 1548775240,
@@ -605,14 +626,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
        "user_id": 1,
        "what": ""
      }
+   ]
 ```
+
 ---
 
 ## Endpoint: Reports - Get report payment orders
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/payment_orders`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `start`
     - **Type:** `Number`
@@ -630,8 +652,9 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** User accounting period unique ID.
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[{
 	"amount": 0.0,
 	"created": 0,
   "human_created": "Thu Jan  1 03:00:00 1970",
@@ -649,15 +672,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
 	"state": 0,
 	"transaction_id": "",
 	"transaction_time": 0
-}
+}]
 ```
+
 ---
 
 ## Endpoint: Reports - Get report payments
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/payments`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
@@ -699,7 +722,8 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** download as csv [0|1] 0 = false, 1 = true
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
 	"payments": [{
 		"account_id": 33,
@@ -819,13 +843,13 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
 	"total_rows": 18
 }
 ```
+
 ---
 
 ## Endpoint: Reports - Get report services
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/services`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `start`
     - **Type:** `Number`
@@ -849,8 +873,10 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** User group ID.
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+   {
      "account_id": 39,
      "accounting_period_id": 430,
      "charge": 1000.0,
@@ -862,14 +888,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
      "service_name": "service_1000",
      "service_type": 2
    }
+]
 ```
+
 ---
 
 ## Endpoint: Reports - Get report telephone directions
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/tel_directions`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
@@ -893,8 +920,10 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** User group ID, if zero , then user_id or account_id != 0
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "calls_cnt": 2,
     "cost": 2.0,
     "dir_id": 1000000,
@@ -902,14 +931,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     "duration": 120,
     "nonzero_duration_calls_cnt": 2
   }
+]
 ```
+
 ---
 
 ## Endpoint: Reports - Get report telephone numbers
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/tel_numbers`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
@@ -930,7 +960,9 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** is download report ? [0,1]
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+[
 {
  "num_id" : 1,
  "slink_id" : 2,
@@ -944,14 +976,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
  "account_id": 1,
  "comment" : ""
 }
+]
 ```
+
 ---
 
 ## Endpoint: Reports - Get report telephony
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/telephony`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
@@ -978,8 +1011,10 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** bool(1,0), if set will fetch by call date, instead of upload date
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+   {
      "account_id": 2,
      "acct_sess_time": 60,
      "acct_session_id": "asklnalskd",
@@ -1011,14 +1046,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
      "uname": "",
      "zone_id": 0
    }
+]
 ```
+
 ---
 
 ## Endpoint: Reports - Get response from request of traffic detailed
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/request_traffic_detailed`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
@@ -1036,11 +1072,15 @@ This document describes the endpoints for the 'Reports' API section for UTM5 isp
     - **Type:** `Number`
     - **Description:** end of desired period
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+ [
 {
   "account_id": "all",
   "is_request_done": true
 }
+ ]
 ```
+
 ---
 

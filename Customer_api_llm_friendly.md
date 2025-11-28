@@ -6,7 +6,6 @@ This document describes the endpoints for the 'customer' API section for UTM5 is
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/customer/24tv_service`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `user_id`
     - **Type:** `Number`
@@ -18,23 +17,26 @@ This document describes the endpoints for the 'customer' API section for UTM5 is
     - **Type:** `Number`
     - **Description:** Subscription id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "result" : "ok" }
 ```
+
 ---
 
 ## Endpoint: customer - Delete service links
 ### Details:
 - **Method:** `DELETE`
 - **URL:** `{{api_url}}api/customer/servicelinks`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `slink_id`
     - **Type:** `Number`
     - **Description:** Service link id
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "result" : "ok" }
 ```
+
 ---
 

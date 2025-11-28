@@ -6,127 +6,136 @@ This document describes the endpoints for the 'User_ServiceLinks' API section fo
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/servicelinks/coefficient_schedule`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "coefficient_schedule_link" : 1 }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Create dialup
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/servicelinks/dialup`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "service_link_id" : 1 }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Create hotspot
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/servicelinks/hotspot`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "service_link_id" : 1 }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Create iptraffic
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/servicelinks/iptraffic`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "service_link_id" : 1 }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Create iptv
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/servicelinks/iptv`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "service_link_id" : 1 }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Create service link once
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/servicelinks/once`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "service_link_id" : 1 }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Create service link periodic
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/servicelinks/periodic`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "service_link_id" : 1 }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Create telephony
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/servicelinks/telephony`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "service_link_id" : 1 }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Create vod
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/servicelinks/vod`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "service_link_id" : 1 }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Enable turbo mode
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/users/servicelinks/enable_turbo_mode`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "result" : "ok"}
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Get all user service links
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/servicelinks`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `account_id`
     - **Type:** `Number`
@@ -135,8 +144,10 @@ This document describes the endpoints for the 'User_ServiceLinks' API section fo
     - **Type:** `Number`
     - **Description:** Users unique login.
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+ [
+  {
                 "account_id" : "1",
                 "service_id" : "1",
                 "service_type" : "3",
@@ -148,20 +159,22 @@ This document describes the endpoints for the 'User_ServiceLinks' API section fo
                 "accounting_period_id" : "1",
                 "comment": "",
          }
+ ]
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Get coefficient schedule
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/servicelinks/coefficient_schedule`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `schedule_link_id`
     - **Type:** `Number`
     - **Description:** Schedule link id.
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "id" : 1,
   "scheme_id" : 2,
@@ -172,19 +185,21 @@ This document describes the endpoints for the 'User_ServiceLinks' API section fo
   "change_date" : 2
  }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Get dialup
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/servicelinks/dialup`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `slink_id`
     - **Type:** `Number`
     - **Description:** Service link id.
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+
 {
         "dialupServiceLink": {
             "allowed_cid": "",
@@ -258,39 +273,43 @@ This document describes the endpoints for the 'User_ServiceLinks' API section fo
         },
       }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Get freezed
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/servicelinks/freezed`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `slink_id`
     - **Type:** `Number`
     - **Description:** Service link id.
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+
+ {
             "cost_coef": 1.0,
             "discount_date": 1571209245,
             "is_executed": false,
             "slink_id": 165
         }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Get hotspot
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/servicelinks/hotspot`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `slink_id`
     - **Type:** `Number`
     - **Description:** Service link id.
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+
 {
         "hotspotservicelink": {
             "login": "as",
@@ -353,19 +372,21 @@ This document describes the endpoints for the 'User_ServiceLinks' API section fo
         }
       }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Get iptraffic
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/servicelinks/iptraffic`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `slink_id`
     - **Type:** `Number`
     - **Description:** Service link id.
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+
 {
          "bandwidth": {
            "in": 0,
@@ -536,20 +557,22 @@ This document describes the endpoints for the 'User_ServiceLinks' API section fo
          }
        }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Get iptv
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/servicelinks/iptv`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `slink_id`
     - **Type:** `Number`
     - **Description:** Service link id.
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+
+  {
           "periodicservicelink": {
             "accounting_period_id": 1,
             "charged_in_curr_period": 0.0,
@@ -611,39 +634,42 @@ This document describes the endpoints for the 'User_ServiceLinks' API section fo
                 }
         }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Get once
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/servicelinks/once`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `slink_id`
     - **Type:** `Number`
     - **Description:** Service link id.
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+
+ {
             "cost_coef": 1.0,
             "discount_date": 1571209245,
             "executing": false,
             "slink_id": 165
         }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Get periodic service link stats
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/servicelinks/periodic_slink_stats`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `slink_id`
     - **Type:** `Number`
     - **Description:** Service link ID
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "accounting_period_id": 1,
   "charged_in_curr_period": 591.3000000000001,
@@ -673,20 +699,22 @@ This document describes the endpoints for the 'User_ServiceLinks' API section fo
   }
 }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Get periodic
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/servicelinks/periodic`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `slink_id`
     - **Type:** `Number`
     - **Description:** Service link id.
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+
+  {
             "periodicservicelink": {
                 "accounting_period_id": 3,
                 "charged_in_curr_period": 4.052633633469427,
@@ -740,19 +768,21 @@ This document describes the endpoints for the 'User_ServiceLinks' API section fo
             }
         }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Get service link shaping
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/servicelinks/slink_shaping`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `slink_id`
     - **Type:** `Number`
     - **Description:** Service link id.
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+
 {
 	"flags" : 123,
 	"turbomode_settings_id" : 123,
@@ -764,19 +794,21 @@ This document describes the endpoints for the 'User_ServiceLinks' API section fo
 	"outgoing_consumption_left" : 123
 }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Get telephony
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/users/servicelinks/telephony`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `slink_id`
     - **Type:** `Number`
     - **Description:** Service link id.
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
+
 {
          "periodicservicelink": {
            "accounting_period_id": 3,
@@ -848,113 +880,123 @@ This document describes the endpoints for the 'User_ServiceLinks' API section fo
          }
        }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Update coefficient schedule
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/servicelinks/coefficient_schedule`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "result" : "ok" }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Update dialup
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/servicelinks/dialup`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "result" : "ok" }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Update hotspot
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/servicelinks/hotspot`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "result" : "ok" }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Update iptraffic
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/servicelinks/iptraffic`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "result" : "ok" }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Update iptv
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/servicelinks/iptv`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "result" : "ok" }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Update once
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/servicelinks/once`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "result" : "ok" }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Update periodic
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/servicelinks/periodic`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "result" : "ok" }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Update telephony
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/servicelinks/telephony`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "result" : "ok" }
 ```
+
 ---
 
 ## Endpoint: User/ServiceLinks - Update vod
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/users/servicelinks/vod`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "result" : "ok" }
 ```
+
 ---
 

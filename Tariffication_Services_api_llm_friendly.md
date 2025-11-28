@@ -6,146 +6,156 @@ This document describes the endpoints for the 'Tariffication_Services' API secti
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/tariffing/services/dialup`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "service_id": 33
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Create freezed service
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/tariffing/services/freezed`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "service_id" : 1}
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Create hotspot service
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/tariffing/services/hotspot`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "service_id": 6,
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Create ip traffic service
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/tariffing/services/iptraffic`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "service_id": 33
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Create iptv service
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/tariffing/services/iptv`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "service_id": 33
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Create once service
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/tariffing/services/once`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "service_id" : 1}
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Create periodic service
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/tariffing/services/periodic`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "service_id": 19
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Create telephony service
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/tariffing/services/telephony`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "service_id": 25
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Create vod service
 ### Details:
 - **Method:** `POST`
 - **URL:** `{{api_url}}api/tariffing/services/vod`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "service_id": 33
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Get charge policy by service id
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/tariffing/services/charge_policy`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
           "policy_id" : 1,
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Get dialup by service id
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/tariffing/services/dialup`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "dialup_service_data": {
     "costs": [
@@ -188,16 +198,17 @@ This document describes the endpoints for the 'Tariffication_Services' API secti
   }
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Get freezed service
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/tariffing/services/freezed`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "freezed_service_data": {
     "cost": 100.0,
@@ -221,16 +232,17 @@ This document describes the endpoints for the 'Tariffication_Services' API secti
   }
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Get hotspot by service id
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/tariffing/services/hotspot`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "hotspot_service_data": {
     "allowed_net": [
@@ -279,16 +291,17 @@ This document describes the endpoints for the 'Tariffication_Services' API secti
   }
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Get ip_tv by service id
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/tariffing/services/iptv`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "iptv_service_data": {
     "custom_data": "113",
@@ -322,16 +335,17 @@ This document describes the endpoints for the 'Tariffication_Services' API secti
   }
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Get iptraffic by service id
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/tariffing/services/iptraffic`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "iptraffic_service_data": {
     "aggregation_interval": 0,
@@ -371,44 +385,47 @@ This document describes the endpoints for the 'Tariffication_Services' API secti
   }
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Get links count by service id
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/tariffing/services/links_count`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
           "links_count" : 1,
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Get multi linking by service id
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/tariffing/services/multi_linking`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
           "multiple_linking" : 1
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Get once service
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/tariffing/services/once`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "once_service_data": {
     "cost": 0.0,
@@ -432,16 +449,17 @@ This document describes the endpoints for the 'Tariffication_Services' API secti
   }
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Get periodic service by service id
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/tariffing/services/periodic`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "periodic_service_data": {
     "charge_method": 1,
@@ -470,17 +488,19 @@ This document describes the endpoints for the 'Tariffication_Services' API secti
   }
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Get services
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/tariffing/services`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
       "service_id" : 1,
       "service_type" : 1,
       "service_type_name" : "iptraffic",
@@ -495,31 +515,34 @@ This document describes the endpoints for the 'Tariffication_Services' API secti
       "contract_type" : 1,
       "scheme_id" : 1
   }
+]
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Get supplier_id by service id
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/tariffing/services/supplier_id`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
           "supplier_id" : 1,
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Get telephony by service id
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/tariffing/services/telephony`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "periodic_service_data": {
     "charge_method": 1,
@@ -584,16 +607,17 @@ This document describes the endpoints for the 'Tariffication_Services' API secti
   }
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Get vod service
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/tariffing/services/vod`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "periodic_service_data": {
     "charge_method": 1,
@@ -630,171 +654,184 @@ This document describes the endpoints for the 'Tariffication_Services' API secti
   }
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Set charge policy for service
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/tariffing/services/set_charge_policy`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result" : "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Set multi linking for service
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/tariffing/services/set_multi_linking`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result" : "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Set supplier id for service
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/tariffing/services/set_supplier_id`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result" : "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Update dialup service
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/tariffing/services/dialup`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result" : "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Update freezed service
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/tariffing/services/freezed`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Update hotspot service
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/tariffing/services/hotspot`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result" : "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Update ip traffic service
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/tariffing/services/iptraffic`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result" : "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Update iptv service
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/tariffing/services/iptv`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result": "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Update once service
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/tariffing/services/once`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 { "result" : "ok"}
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Update periodic services
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/tariffing/services/periodic`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result" : "ok"
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Update telephony service
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/tariffing/services/telephony`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result" : "ok",
 }
 ```
+
 ---
 
 ## Endpoint: Tariffication Services - Update vod service
 ### Details:
 - **Method:** `PUT`
 - **URL:** `{{api_url}}api/tariffing/services/vod`
-- **Ready:** `false`
 ### Parameters: None
 ### Example Response:
-```
+
+HTTP/1.1 200 OK
 {
   "result" : "ok"
 }
 ```
+
 ---
 

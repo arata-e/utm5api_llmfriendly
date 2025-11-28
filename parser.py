@@ -25,7 +25,9 @@ def parse_markdown_file(filepath):
         ready_match = re.search(r'- \*\*Ready:\*\* `(.*?)`', block)
         ready = ready_match.group(1).strip().lower() == 'true' if ready_match else False
 
-        endpoint_description_match = re.search(r'- \*\*Description:\*\* `(.*?)`', block)
+        # This is the problematic regex
+        endpoint_description_match = re.search(r'- \*\*Description:\*\* `([\s\S]*?)`\s*(?=\n###|\Z)', block, re.DOTALL)
+
         endpoint_description = endpoint_description_match.group(1).strip() if endpoint_description_match else "No description provided."
 
         parameters = []
@@ -62,4 +64,4 @@ def parse_markdown_file(filepath):
 if __name__ == '__main__':
     # For testing, parse the User_api_llm_friendly.md file
     parsed_data = parse_markdown_file('User_api_llm_friendly.md')
-    print(json.dumps(parsed_data, indent=2))
+    print(json.dumps(parsed_data, indent=2)) # Un-commented to show final parsed data

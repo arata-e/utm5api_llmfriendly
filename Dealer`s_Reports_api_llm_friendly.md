@@ -6,7 +6,6 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/dealer/blocks`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `accounting_period_id`
     - **Type:** `Number`
@@ -30,8 +29,10 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
     - **Type:** `Number`
     - **Description:** show only admin and not deleted,or all [0|1]
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "account_id": 3,
     "block_data": {
       "account_id": 3,
@@ -59,14 +60,15 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
     },
     "login": "root"
   }
+]
 ```
+
 ---
 
 ## Endpoint: Dealer`s Reports - Get dealer traffic report
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/dealer/traffic`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `accounting_period_id`
     - **Type:** `Number`
@@ -90,8 +92,10 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
     - **Type:** `Number`
     - **Description:** type of grouped ;enum {by hour :1,by_day,by_month,by_ip}
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
    "account_id": 4,
    "accounting_period_id": 0,
    "base_cost": 1245.0,
@@ -106,14 +110,15 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
    "slink_id": 1245,
    "tclass": 1245
  }
+]
 ```
+
 ---
 
 ## Endpoint: Dealer`s Reports - Get dealer's invoices report
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/dealer/invoices`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `end`
     - **Type:** `Number`
@@ -125,8 +130,10 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
     - **Type:** `Number`
     - **Description:** dealer unique identifier
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "currency_rate": 1.0,
     "doc_type": 1,
     "invoice": {
@@ -182,14 +189,15 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
     "pdf_modified": 0,
     "pdf_status": -1
   }
+]
 ```
+
 ---
 
 ## Endpoint: Dealer`s Reports - Get dealer's payments report
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/dealer/payments`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `accounting_period_id`
     - **Type:** `Number`
@@ -210,8 +218,10 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
     - **Type:** `Number`
     - **Description:** dealer unique identifier
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
    "account_id": 3,
    "actual_date": 1572452076,
    "admin_comment": "",
@@ -249,14 +259,15 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
    "payment_incurrency": -12.0,
    "user_id": -1
  }
+]
 ```
+
 ---
 
 ## Endpoint: Dealer`s Reports - Get dealer's services report
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/dealer/services`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `accounting_period_id`
     - **Type:** `Number`
@@ -277,8 +288,9 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
     - **Type:** `Number`
     - **Description:** dealer unique identifier
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[{
 	"account_id": 1,
 	"accounting_period_id": 5,
 	"charge": 12.0,
@@ -289,15 +301,15 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
 	"outgoing_rest": -913.0,
 	"service_name": "period",
 	"service_type": 2
-}
+}]
 ```
+
 ---
 
 ## Endpoint: Dealer`s Reports - Get dealer's sessions report
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/dealer/sessions`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `accounting_period_id`
     - **Type:** `Number`
@@ -318,8 +330,10 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
     - **Type:** `Number`
     - **Description:** dealer unique identifier
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+ {
    "account_id": 3,
    "acct_delay_time": 0,
    "acct_inp_giga": 666,
@@ -352,14 +366,15 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
    "slink_id": 4,
    "uname": "useER"
  }
+]
 ```
+
 ---
 
 ## Endpoint: Dealer`s Reports - Get dealer's telephony report
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/dealer/telephony`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `accounting_period_id`
     - **Type:** `Number`
@@ -380,8 +395,10 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
     - **Type:** `Number`
     - **Description:** dealer unique identifier
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "account_id": 3,
     "acct_delay_time": 0,
     "acct_sess_time": 45,
@@ -422,14 +439,15 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
     "uname": "USSSS",
     "zone_id": 13
   }
+]
 ```
+
 ---
 
 ## Endpoint: Dealer`s Reports - Get dealer`s general report
 ### Details:
 - **Method:** `GET`
 - **URL:** `{{api_url}}api/reports/dealer/general`
-- **Ready:** `false`
 ### Parameters:
   - **Name:** `accounting_period_id`
     - **Type:** `Number`
@@ -450,8 +468,10 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
     - **Type:** `Number`
     - **Description:** dealer unique identifier
 ### Example Response:
-```
-{
+
+HTTP/1.1 200 OK
+[
+  {
     "account_id": 1,
     "incoming_found": true,
     "incoming_rest": 0.0,
@@ -470,6 +490,8 @@ This document describes the endpoints for the 'Dealer`s_Reports' API section for
     ],
     "services_discount_with_tax": []
   }
+]
 ```
+
 ---
 
